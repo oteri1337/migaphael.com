@@ -14,10 +14,10 @@ function CategoryListPage() {
     return (
       <div key={id} className="col l2 s12 center">
         <div className="card hoverable">
-          <div className="card-image app-px-1 app-py-1">
-            <img src={`/uploads/images/${image}`} />
+          <div style={{ marginBottom: "5px" }}>
+            <img src={`/uploads/images/${image}`} width="130" height="113" />
           </div>
-          {name}
+          <a>{name}</a>
           <br />
           <br />
         </div>

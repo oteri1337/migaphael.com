@@ -5,7 +5,18 @@ body {
   top: 0px !important;
   max-width: 1400px;
   margin: 0 auto;
-  font-family: "Signika Negative";
+}
+
+.btn {
+  text-transform: none;
+}
+
+textarea.materialize-textarea {
+  min-height: 190px;
+}
+
+.card {
+  padding: 20px;
 }
 
 select {
@@ -22,6 +33,8 @@ pre {
 
 .card-panel {
   padding: 18px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .input-field input[type="search"] ~ .mdi-navigation-close,
@@ -122,6 +135,9 @@ h6 {
   padding: 0 0.6rem;
   vertical-align: middle;
   cursor: pointer;
+  top: -3px;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .row {
@@ -181,11 +197,31 @@ input {
 
   --primary-font-colour: #e3e3e3;
 
-  --button-colour: #fab915;
+  --button-colour: #80bb01;
 
   --button-font-colour: #ffffff;
 
   --alt-color: #2e5067;
+}
+
+.bg.bg-page {
+  background: var(--background-colour);
+}
+
+.card {
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+}
+
+.card:hover {
+  box-shadow: none;
+  border: 2px solid #80bb01;
+}
+
+.card a {
+  color: #242424;
+  font-weight: 700;
 }
 
 .btn.btn-secondary {
@@ -253,13 +289,15 @@ input {
 }
 
 .card {
-  color: var(--secondary-font-colour);
-  background: var(--secondary-background);
+  color: var(--primary-font-colour);
+  background: var(--primary-background);
 }
 
 .card-panel {
-  color: var(--secondary-font-colour);
-  background: var(--secondary-background);
+  color: #333333;
+  font-weight: 400;
+  line-height: 24px;
+  background: var(--primary-background);
 }
 
 .contrast {
@@ -288,10 +326,8 @@ input {
 .btn:focus,
 .btn-floating,
 .btn-floating:hover {
-  text-transform: uppercase;
   background: var(--button-colour);
   color: var(--button-font-colour) !important;
-  font-weight: bold;
 }
 
 .btn-color {
@@ -303,7 +339,7 @@ nav {
 }
 
 .sidenav {
-  background: var(--secondary-background);
+  background: var(--primary-background);
   overflow-y: scroll;
 }
 
@@ -324,7 +360,7 @@ nav {
 
 .sidenav li > a,
 .sidenav li > a:hover {
-  background: var(--secondary-background);
+  background: var(--primary-background);
   color: var(--background-font-colour);
 }
 
@@ -373,6 +409,11 @@ input {
   color: var(--background-font-colour);
 }
 
+input[type="search"]:not(.browser-default) {
+  border-radius: 5px;
+  background-color: var(--primary-background);
+}
+
 .collection-item {
   color: var(--secondary-font-colour);
   border: 1px solid var(--border-colour) !important;
@@ -397,11 +438,11 @@ body {
 nav ul a,
 .trasparent a,
 nav .brand-logo {
-  color: var(--primary-font-colour);
+  color: var(--secondary-font-colour);
 }
 
 .bg {
-  background-color: var(--primary-backgroud);
+  background-color: var(--primary-background);
   color: var(--primary-font-colour);
 }
 
@@ -411,6 +452,10 @@ nav .brand-logo {
 
 .bg.bg-secondary {
   background-color: var(--secondary-background);
+  color: var(--secondary-font-colour);
+}
+
+.bg.bg-secondary a {
   color: var(--secondary-font-colour);
 }
 
@@ -666,6 +711,140 @@ a.hover:hover {
   transition: opacity 600ms linear;
 }
 
+body {
+  font-size: 14px;
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+}
+
+nav ul a {
+  font-size: 14px;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: grey;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.app-image-back-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(/assets/images/Background1.jpg);
+}
+
+.app-image-back-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(/assets/images/Background2.jpg);
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url(/assets/fonts/Flaticon.eot);
+  src: url(/assets/fonts/Flaticon.eot?#iefix) format("embedded-opentype"),
+    url(/assets/fonts/Flaticon.woff) format("woff"),
+    url(/assets/fonts/Flaticon.ttf) format("truetype"),
+    url(/assets/images/Flaticon.svg#Flaticon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url(/assets/images/Flaticon.svg#Flaticon) format("svg");
+  }
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+}
+.flaticon-bitcoin-1:before {
+  content: "\f100";
+}
+.flaticon-blocks-with-angled-cuts:before {
+  content: "\f101";
+}
+.flaticon-straight-quotes:before {
+  content: "\f102";
+}
+.flaticon-left-quote:before {
+  content: "\f103";
+}
+.flaticon-quote:before {
+  content: "\f104";
+}
+.flaticon-bitcoin:before {
+  content: "\f105";
+}
+.flaticon-arrows-1:before {
+  content: "\f106";
+}
+.flaticon-arrows:before {
+  content: "\f107";
+}
+.flaticon-school-material:before {
+  content: "\f108";
+}
+.flaticon-blogging:before {
+  content: "\f109";
+}
+.flaticon-factory:before {
+  content: "\f10a";
+}
+.flaticon-people:before {
+  content: "\f10b";
+}
+.flaticon-technology:before {
+  content: "\f10c";
+}
+.flaticon-support:before {
+  content: "\f10d";
+}
+.flaticon-secure-shield:before {
+  content: "\f10e";
+}
+.flaticon-connection:before {
+  content: "\f10f";
+}
+.flaticon-analytics:before {
+  content: "\f110";
+}
+.flaticon-money-2:before {
+  content: "\f111";
+}
+.flaticon-market:before {
+  content: "\f112";
+}
+.flaticon-money-1:before {
+  content: "\f113";
+}
+.flaticon-money:before {
+  content: "\f114";
+}
+.flaticon-coin:before {
+  content: "\f115";
+}
+.flaticon-credit-card:before {
+  content: "\f116";
+}
+.flaticon-wallet:before {
+  content: "\f117";
+}
+
 /* Width Below 320px - Small Mobile */
 /* Width Above 320px and Below 420px - Mobile */
 /* Width Above 420px and Below 1024px - Tablet */
@@ -850,104 +1029,7 @@ a.hover:hover {
   }
 
   .container {
-    width: 85%;
+    width: 90%;
   }
-}
-
-
-@font-face {
-  font-family: "Flaticon";
-  src: url(/assets/fonts/Flaticon.eot);
-  src: url(/assets/fonts/Flaticon.eot?#iefix) format("embedded-opentype"),
-    url(/assets/fonts/Flaticon.woff) format("woff"),
-    url(/assets/fonts/Flaticon.ttf) format("truetype"),
-    url(/assets/images/Flaticon.svg#Flaticon) format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Flaticon";
-    src: url(/assets/images/Flaticon.svg#Flaticon) format("svg");
-  }
-}
-[class^="flaticon-"]:before,
-[class*=" flaticon-"]:before,
-[class^="flaticon-"]:after,
-[class*=" flaticon-"]:after {
-  font-family: Flaticon;
-  font-style: normal;
-}
-.flaticon-bitcoin-1:before {
-  content: "\f100";
-}
-.flaticon-blocks-with-angled-cuts:before {
-  content: "\f101";
-}
-.flaticon-straight-quotes:before {
-  content: "\f102";
-}
-.flaticon-left-quote:before {
-  content: "\f103";
-}
-.flaticon-quote:before {
-  content: "\f104";
-}
-.flaticon-bitcoin:before {
-  content: "\f105";
-}
-.flaticon-arrows-1:before {
-  content: "\f106";
-}
-.flaticon-arrows:before {
-  content: "\f107";
-}
-.flaticon-school-material:before {
-  content: "\f108";
-}
-.flaticon-blogging:before {
-  content: "\f109";
-}
-.flaticon-factory:before {
-  content: "\f10a";
-}
-.flaticon-people:before {
-  content: "\f10b";
-}
-.flaticon-technology:before {
-  content: "\f10c";
-}
-.flaticon-support:before {
-  content: "\f10d";
-}
-.flaticon-secure-shield:before {
-  content: "\f10e";
-}
-.flaticon-connection:before {
-  content: "\f10f";
-}
-.flaticon-analytics:before {
-  content: "\f110";
-}
-.flaticon-money-2:before {
-  content: "\f111";
-}
-.flaticon-market:before {
-  content: "\f112";
-}
-.flaticon-money-1:before {
-  content: "\f113";
-}
-.flaticon-money:before {
-  content: "\f114";
-}
-.flaticon-coin:before {
-  content: "\f115";
-}
-.flaticon-credit-card:before {
-  content: "\f116";
-}
-.flaticon-wallet:before {
-  content: "\f117";
 }
 

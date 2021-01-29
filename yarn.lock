@@ -6657,10 +6657,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-signika-negative@^0.0.71:
-  version "0.0.71"
-  resolved "https://registry.yarnpkg.com/typeface-signika-negative/-/typeface-signika-negative-0.0.71.tgz#76781e8b63650f23dec4e697f1e1c2d75395ee5f"
-  integrity sha512-NuQK8Kn1Lm2x8r/BaIAx6pV3B+96qVbZZEVwEDgVePjPoNdk5j1l0gWlXwI2klW3dbEcxk+3YsAEHkR+ZH97IQ==
+typeface-rubik@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-rubik/-/typeface-rubik-1.1.13.tgz#c01d40f05718590bc05d08ea404666a8ef56377a"
+  integrity sha512-mMWgn3bYfT6V4WWA3yvdEM3AkTA7iK1XwhlOX3+vWfqHc6O9I2RUsi9krEXzNdQ1UE/eoEFBRigMtu30PsdEDg==
 
 uid-safe@~2.1.5:
   version "2.1.5"

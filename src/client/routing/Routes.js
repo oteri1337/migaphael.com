@@ -6,8 +6,11 @@ import GuestRoute from "./GuestRoute";
 import AdminRoute from "./AdminRoute";
 import GuestAdminRoute from "./GuestAdminRoute";
 
+import HomePage from "../pages/tour/HomePage";
 import TermsPage from "../pages/tour/TermsPage";
 import ErrorPage from "../pages/tour/ErrorPage";
+import AboutPage from "../pages/tour/AboutPage";
+import ContactPage from "../pages/tour/ContactPage";
 
 import CartPage from "../pages/shop/CartPage";
 import ProductsListPage from "../pages/shop/ProductsListPage";
@@ -71,9 +74,11 @@ function Routes() {
   return (
     <React.Fragment>
       <Switch>
-        <Route exact path="/" component={ProductsListPage} />
-        <Route exact path="/index.html" component={ProductsListPage} />
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/index.html" component={HomePage} />
         <Route exact path="/terms.html" component={TermsPage} />
+        <Route exact path="/about.html" component={AboutPage} />
+        <Route exact path="/contact.html" component={ContactPage} />
 
         <Route exact path="/shop/cart.html" component={CartPage}/>
         <Route exact path="/shop/products.html" component={ProductsListPage}/>

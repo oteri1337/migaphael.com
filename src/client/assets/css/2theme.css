@@ -13,11 +13,31 @@
 
   --primary-font-colour: #e3e3e3;
 
-  --button-colour: #fab915;
+  --button-colour: #80bb01;
 
   --button-font-colour: #ffffff;
 
   --alt-color: #2e5067;
+}
+
+.bg.bg-page {
+  background: var(--background-colour);
+}
+
+.card {
+  box-shadow: none;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+}
+
+.card:hover {
+  box-shadow: none;
+  border: 2px solid #80bb01;
+}
+
+.card a {
+  color: #242424;
+  font-weight: 700;
 }
 
 .btn.btn-secondary {
@@ -85,13 +105,15 @@
 }
 
 .card {
-  color: var(--secondary-font-colour);
-  background: var(--secondary-background);
+  color: var(--primary-font-colour);
+  background: var(--primary-background);
 }
 
 .card-panel {
-  color: var(--secondary-font-colour);
-  background: var(--secondary-background);
+  color: #333333;
+  font-weight: 400;
+  line-height: 24px;
+  background: var(--primary-background);
 }
 
 .contrast {
@@ -120,10 +142,8 @@
 .btn:focus,
 .btn-floating,
 .btn-floating:hover {
-  text-transform: uppercase;
   background: var(--button-colour);
   color: var(--button-font-colour) !important;
-  font-weight: bold;
 }
 
 .btn-color {
@@ -135,7 +155,7 @@ nav {
 }
 
 .sidenav {
-  background: var(--secondary-background);
+  background: var(--primary-background);
   overflow-y: scroll;
 }
 
@@ -156,7 +176,7 @@ nav {
 
 .sidenav li > a,
 .sidenav li > a:hover {
-  background: var(--secondary-background);
+  background: var(--primary-background);
   color: var(--background-font-colour);
 }
 
@@ -205,6 +225,11 @@ input {
   color: var(--background-font-colour);
 }
 
+input[type="search"]:not(.browser-default) {
+  border-radius: 5px;
+  background-color: var(--primary-background);
+}
+
 .collection-item {
   color: var(--secondary-font-colour);
   border: 1px solid var(--border-colour) !important;
@@ -229,11 +254,11 @@ body {
 nav ul a,
 .trasparent a,
 nav .brand-logo {
-  color: var(--primary-font-colour);
+  color: var(--secondary-font-colour);
 }
 
 .bg {
-  background-color: var(--primary-backgroud);
+  background-color: var(--primary-background);
   color: var(--primary-font-colour);
 }
 
@@ -243,6 +268,10 @@ nav .brand-logo {
 
 .bg.bg-secondary {
   background-color: var(--secondary-background);
+  color: var(--secondary-font-colour);
+}
+
+.bg.bg-secondary a {
   color: var(--secondary-font-colour);
 }
 

@@ -1,0 +1,11 @@
+.app-image-back-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url("../images/Background1.jpg");
+}
+
+.app-image-back-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url("../images/Background2.jpg");
+}

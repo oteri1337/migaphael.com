@@ -30,13 +30,13 @@ function HomePage() {
 
       return (
         //prettier-ignore
-        <a onClick={() => {callReducer({ dispatch: "ADD_TO_CART", data });}}>
-          <span className="material-icons notranslate">add_shopping_cart</span> Add
+        <a onClick={() => {callReducer({ dispatch: "ADD_TO_CART", data });}} className="btn">
+          Add To Cart
         </a>
       );
     };
     return (
-      <div className="col l4 m6 s6" key={props.id}>
+      <div className="col l3 s12" key={props.id}>
         <div className="card medium animated fadeInUp">
           <div className="card-image">
             <img src={`/uploads/images/${props.image_one}`} />
@@ -46,20 +46,19 @@ function HomePage() {
               <Link to={{ pathname: `/shop/products/${props.slug}`, props }}>
                 {props.title}
               </Link>
-
               <br />
-              <p>{format("NGN", props.price)}</p>
+              <p>{format("NGN", props.price)}</p> <br /> <br />
             </center>
           </div>
-          <div className="card-action" style={{ fontSize: "1rem" }}>
+          <div className="card-action">
             <center>
               {renderCartButton(props)}
-              <Link to="/shop/cart.html" className="waves-effect">
+              {/* <Link to="/shop/cart.html" className="waves-effect">
                 <span className="material-icons notranslate">
                   shopping_cart
                 </span>{" "}
                 Cart
-              </Link>
+              </Link> */}
             </center>
           </div>
         </div>
@@ -74,7 +73,7 @@ function HomePage() {
   ];
 
   return (
-    <Container className="bg bg-secondary">
+    <Container className="bg">
       <div className="row">
         <div className="container">
           <Search dispatch="UPDATE_PRODUCTS" endpoint="/api/products/search" />

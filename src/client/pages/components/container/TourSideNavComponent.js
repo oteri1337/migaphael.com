@@ -27,7 +27,7 @@ function TourSideNavComponent() {
         </div>
       </li>
 
-      <li className="no-padding">
+      {/* <li className="no-padding">
         <ul className="collapsible collapsible-accordion">
           <li className="active">
             <a className="collapsible-header">
@@ -57,7 +57,7 @@ function TourSideNavComponent() {
             </div>
           </li>
         </ul>
-      </li>
+      </li> */}
 
       <li className="no-padding">
         <ul className="collapsible collapsible-accordion">
@@ -69,19 +69,34 @@ function TourSideNavComponent() {
             <div className="collapsible-body">
               <ul>
                 <li>
-                  <Link to="/signin.html" className="sidenav-close">
+                  <Link to="/shop/products.html" className="sidenav-close">
                     <span className="material-icons notranslate">
-                      account_circle
+                      shopping_cart
                     </span>
-                    Sign In
+                    Shop
                   </Link>
                 </li>
+
                 <li>
-                  <Link to="/signup.html" className="sidenav-close">
+                  <Link to="/" className="sidenav-close">
+                    <span className="material-icons notranslate">home</span>
+                    Home
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/contact.html" className="sidenav-close">
+                    <span className="material-icons notranslate">phone</span>
+                    Contact
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/about.html" className="sidenav-close">
                     <span className="material-icons notranslate">
-                      person_add
+                      supervised_user_circle
                     </span>
-                    Sign Up
+                    About Us
                   </Link>
                 </li>
               </ul>
