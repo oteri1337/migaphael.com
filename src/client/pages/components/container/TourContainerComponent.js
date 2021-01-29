@@ -48,7 +48,7 @@ function ContainerComponent(props) {
       <main style={{ minHeight: "75vh" }} className={props.className}>
         <NavComponent />
         <SideNavComponent />
-        <div className="bg bg-secondary show-on-large-only">
+        <div className="bg bg-secondary hide-on-med-and-down">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">Hotline: +234 803 192 0968</div>
